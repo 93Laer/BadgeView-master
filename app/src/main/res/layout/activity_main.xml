@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.laitianbing.badgeview_master.BadgeView
+        android:id="@+id/tag_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="4dp"
+        app:badgeAnchorPosition="AnchorRightTop"
+        app:badgeBgColor="@android:color/holo_red_light"
+        app:badgeBorderColor="@android:color/white"
+        app:badgeBorderWidth="2dp"
+        app:badgeMarginHorizon="16dp"
+        app:badgeText="33"
+        app:badgeTextColor="@android:color/white"
+        app:badgeTextSize="10sp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_home_progress"
+            android:gravity="center_horizontal"
+            android:text="处理中" />
+    </com.example.laitianbing.badgeview_master.BadgeView>
+
+    <com.example.laitianbing.badgeview_master.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="4dp"
+        app:badgeAnchorPosition="AnchorRightTop"
+        app:badgeBgColor="@android:color/holo_red_light"
+        app:badgeBorderColor="@android:color/white"
+        app:badgeBorderWidth="2dp"
+        app:badgeMarginHorizon="16dp"
+        app:badgeText=" "
+        app:badgeTextColor="@android:color/white"
+        app:badgeTextSize="10sp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_home_progress"
+            android:gravity="center_horizontal"
+            android:text="处理中" />
+    </com.example.laitianbing.badgeview_master.BadgeView>
+
+    <com.example.laitianbing.badgeview_master.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="4dp"
+        app:badgeAnchorPosition="AnchorRightTop"
+        app:badgeBgColor="@android:color/holo_red_light"
+        app:badgeBorderColor="@android:color/white"
+        app:badgeBorderWidth="2dp"
+        app:badgeMarginHorizon="16dp"
+        app:badgeText="hot"
+        app:badgeTextColor="@android:color/white"
+        app:badgeTextSize="10sp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_home_progress"
+            android:gravity="center_horizontal"
+            android:text="处理中" />
+    </com.example.laitianbing.badgeview_master.BadgeView>
+
+    <com.example.laitianbing.badgeview_master.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="4dp"
+        app:badgeAnchorPosition="AnchorRightTop"
+        app:badgeBgColor="@android:color/holo_red_light"
+        app:badgeBorderColor="@android:color/white"
+        app:badgeBorderWidth="2dp"
+        app:badgeMarginHorizon="16dp"
+        app:badgePaddingHorizon="20dp"
+        app:badgeText="hot"
+        app:badgeTextColor="@android:color/white"
+        app:badgeTextSize="10sp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_home_progress"
+            android:gravity="center_horizontal"
+            android:text="处理中" />
+    </com.example.laitianbing.badgeview_master.BadgeView>
+
+    <com.example.laitianbing.badgeview_master.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="4dp"
+        app:badgeAnchorPosition="AnchorRightTop"
+        app:badgeBgColor="@android:color/holo_red_light"
+        app:badgeBorderColor="@android:color/holo_blue_dark"
+        app:badgeBorderWidth="6dp"
+        app:badgeMarginHorizon="16dp"
+        app:badgeMarginVertical="2dp"
+        app:badgePaddingHorizon="20dp"
+        app:badgePaddingVertical="15dp"
+        app:badgeText="hot"
+        app:badgeTextColor="@android:color/white"
+        app:badgeTextSize="10sp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_home_progress"
+            android:gravity="center_horizontal"
+            android:text="处理中" />
+    </com.example.laitianbing.badgeview_master.BadgeView>
+
+</LinearLayout>

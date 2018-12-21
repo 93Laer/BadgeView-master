@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <declare-styleable name="BadgeView">
+        <!--显示文本-->
+        <attr name="badgeText" format="string" />
+        <!--文本字体大小-->
+        <attr name="badgeTextSize" format="dimension" />
+        <!--文本颜色-->
+        <attr name="badgeTextColor" format="color" />
+        <!--边框宽度-->
+        <attr name="badgeBorderWidth" format="dimension" />
+        <!--边框颜色-->
+        <attr name="badgeBorderColor" format="color" />
+        <!--气泡背景色-->
+        <attr name="badgeBgColor" format="color" />
+        <!--徽章显示的位置-->
+        <attr name="badgeAnchorPosition">
+            <enum name="AnchorLeftTop" value="0" />
+            <enum name="AnchorLeftBottom" value="1" />
+            <enum name="AnchorRightTop" value="2" />
+            <enum name="AnchorRightBottom" value="3" />
+        </attr>
+        <!--徽章在水平方向的margin-->
+        <attr name="badgeMarginHorizon" format="dimension" />
+        <!--徽章在垂直方向的margin-->
+        <attr name="badgeMarginVertical" format="dimension" />
+        <!--徽章内部水平padding-->
+        <attr name="badgePaddingHorizon" format="dimension" />
+        <!--徽章内部垂直padding-->
+        <attr name="badgePaddingVertical" format="dimension" />
+    </declare-styleable>
+</resources>
