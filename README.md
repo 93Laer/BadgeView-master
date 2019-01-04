@@ -10,6 +10,7 @@
 ![](https://upload-images.jianshu.io/upload_images/1744409-39f0e2b0f577c99a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 使用说明
+#### 使用方式一:布局中使用
 **第一步：布局**用BadgeView将目标view进行包裹，并定义相关属性
 ```
  <com.chinaway.android.view.BadgeView
@@ -46,6 +47,26 @@ BadgeView badgeView = (BadgeView) findViewById(R.id.tag_solve);
 //设置显示文本
         badgeView.setBadgeText("99+");
 ```
+#### 使用方式二：动态添加徽章控件
+
+```
+ //动态添加
+        TextView button = findViewById(R.id.button);
+        final BadgeView badgeV = new BadgeView(this);
+        badgeV.attach(button)
+                .setBadgeAnchorPosition(BadgeView.ANCHOR_LEFT_TOP)
+                .setBadgeBgcolor(getResources().getColor(android.R.color.holo_green_light))
+                .setBadgeBordercolor(getResources().getColor(android.R.color.white))
+                .setBorderWidth(2)
+                .setMarginHorizon(8)
+                .setMarginVertical(2)
+                .setBadgeTextcolor(getResources().getColor(android.R.color.holo_red_light))
+                .setBadgeTextSize(14)
+                .setPaddingH(12)
+                .setPaddingV(7)
+                .showBadge("啦");
+```
+
 
 #### 控件属性说明
 ```
@@ -79,5 +100,21 @@ BadgeView badgeView = (BadgeView) findViewById(R.id.tag_solve);
         <attr name="badgePaddingVertical" format="dimension" />
     </declare-styleable>
 ```
+
 **特别说明：** 当只想显示一个气泡，不显示文本内容的时候，badgeText传入空格就好，传入 `null`则代表不绘制徽章
 ` app:badgeText="  "`
+
+#### badgeAnchorPosition徽章显示位置说明
+为了方便计算徽章在布局中的位置
+>特别提供了：**左上、右上、左下、右下** ，四个方位
+其次提供：**badgeMarginHorizon、badgeMarginVertical** 来控制在水平方向和垂直方向的margin，其实就是相对于 **badgeAnchorPosition**  这个方位值的x、y方向的偏移量 ，这个偏移量并Android坐标上的偏移，二是相对于`badgeAnchorPosition`的偏移
+
+例如：
+```
+        app:badgeAnchorPosition="AnchorRightTop"
+        app:badgeMarginHorizon="16dp"
+        app:badgeMarginVertical="2dp"
+```
+**说明：** 代表将徽章放到该view的右上角，再距离右边16dp(也就是往左16dp),再往下2dp的位置
+
+源码地址： **[BadgeView-master](https://github.com/93Laer/BadgeView-master)**
