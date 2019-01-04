@@ -223,13 +223,21 @@ public class BadgeView extends RelativeLayout {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, dp, getContext().getResources().getDisplayMetrics());
     }
 
+    public static BadgeView build(View targetView) {
+        if (null == targetView) {
+            throw new RuntimeException("targetView can't null");
+        }
+        BadgeView badgeView = new BadgeView(targetView.getContext());
+        badgeView.attach(targetView);
+        return badgeView;
+    }
+
     /**
      * @param targetView
      */
-    public BadgeView attach(View targetView) {
+    public void attach(View targetView) {
         if (null == targetView || null == targetView.getParent()) {
             Log.e(TAG, "targetView con't is null and must have a parent");
-            return this;
         }
         removeAllViews();
         //设置params
@@ -240,7 +248,6 @@ public class BadgeView extends RelativeLayout {
         parent.removeView(targetView);
         addView(targetView);
         parent.addView(this, index, childParams);
-        return this;
     }
 
     @Override

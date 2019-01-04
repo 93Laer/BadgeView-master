@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
         //动态添加
         TextView button = findViewById(R.id.button);
-        final BadgeView badgeV = new BadgeView(this);
-        badgeV.attach(button)
+
+        BadgeView.build(button)
                 .setBadgeAnchorPosition(BadgeView.ANCHOR_LEFT_TOP)
                 .setBadgeBgcolor(getResources().getColor(android.R.color.holo_green_light))
                 .setBadgeBordercolor(getResources().getColor(android.R.color.white))
