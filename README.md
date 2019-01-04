@@ -116,4 +116,3 @@ BadgeView badgeView = (BadgeView) findViewById(R.id.tag_solve);
 ```
 **说明：** 代表将徽章放到该view的右上角，再距离右边16dp(也就是往左16dp),再往下2dp的位置
 
-源码地址： **[BadgeView-master](https://github.com/93Laer/BadgeView-master)**
